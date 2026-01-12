@@ -1,0 +1,11 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded", // 出力形式
+            "extensionName": ".css",
+            "savePath": "~/../css" // 出力先
+        }
+    ],
+
+    "liveSassCompile.settings.showOutputWindowOn": "Warning"
+}
