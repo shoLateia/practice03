@@ -191,7 +191,6 @@ iframe {
     opacity: 0.4;
     font-weight: bold;
     transition: opacity 0.3s;
-    outline: none;
 }
 @media (any-hover: hover) {
     .tab-button:hover {
