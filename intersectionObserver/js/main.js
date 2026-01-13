@@ -1,3 +1,3 @@
-import { initializeIntersectionObserver } from "./component/IntersectionObserver.js";
+import { initializeHeaderFixed } from "./component/headerFixed.js";
 
-initializeIntersectionObserver();
+initializeHeaderFixed();

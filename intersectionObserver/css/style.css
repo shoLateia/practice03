@@ -1,5 +1,6 @@
 :root {
     --width-content: 1080px;
+    --header-height: 80px;
 }
 
 html {
@@ -186,40 +187,73 @@ iframe {
 
 /* IntersectionObserver */
 .header {
-    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
     padding: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #333;
     font-weight: bold;
-    background-color: rgb(0 0 0 / 0);
-}
+    background-color: #c8c6c6;
 
-.header-logo {
+    &.is-fixed {
+        position: fixed;
+        top: -80px;
+        left: 0;
+        background-color: #333;
+        color: white;
+    }
 }
 
 .header-list {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
-.header-item {
+.header-item a {
+    padding: 20px;
+}
+
+.header-logo {
+    font-size: 32px;
 }
 
 .kv {
-    background-color: #333;
+    background-color: #c8c6c6;
     height: 100vh;
+    display: grid;
+    place-items: center;
 }
 
 .kv-title {
     font-size: 70px;
     font-weight: bold;
+    color: #333;
 }
 
 .content {
+    padding: 80px;
+
+    & > * {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
 }
 
 .content-text {
+    line-height: 2;
+    letter-spacing: 0.07em;
+}
+
+.about-kv {
+    background-color: #c8c6c6;
+    height: 50vh;
+    display: grid;
+    place-items: center;
 }
